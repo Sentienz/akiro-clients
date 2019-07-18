@@ -7,6 +7,6 @@
   <name>Sentienz Transporter Clients</name>
   <description>Client examples to connect to Sentienz Transporter</description>
   <modules>
-  	<module>ingestor-client</module>
+  	<module>transporter-ingestor-client</module>
   </modules>
 </project>
