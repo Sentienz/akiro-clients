@@ -1,0 +1,6 @@
+com/sentienz/transporter/ingestor/client/models/TransporterClMessage.class
+com/sentienz/transporter/ingestor/client/TransporterIngestorClient.class
+com/sentienz/transporter/ingestor/client/examples/IngestorClientExample.class
+com/sentienz/transporter/client/utils/JsonUtils.class
+com/sentienz/transporter/ingestor/client/models/QOS.class
+com/sentienz/transporter/ingestor/client/models/MessageType.class
