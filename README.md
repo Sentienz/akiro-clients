@@ -1,8 +1,8 @@
-# transporter-clients
-Clients to communicate with Sentienz Transporter Platform
+# Akiro-clients
+Clients to communicate with Sentienz Akiro Platform
 
-# transporter-ingestor-client
-Client to send messages to Sentienz Transporter Platform over http/https
+# Akiro-ingestor-client
+Client to send messages to Sentienz Akiro Platform over http/https
 
 ## Steps to use ingestor-client
 1. Add maven dependency to the ingestor client jar
