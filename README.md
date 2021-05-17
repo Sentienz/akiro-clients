@@ -42,7 +42,7 @@ Create a Client Instance by providing the required connection configuration para
 ### Connection Parameters
 Following connection parameters are supported
 
-```json
+```
 {	
 	host : "akiro.broker.ip",
 	port : "akiro.broker.port",
