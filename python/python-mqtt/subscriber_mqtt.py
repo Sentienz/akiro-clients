@@ -3,7 +3,7 @@ import random
 from paho.mqtt import client as mqtt_client
 
 
-broker = 'broker.emqx.io' # This is a free public MQTT Broker provided by EMQ X 
+broker = 'saas.theakiro.com' # This is a Akiro MQTT Broker provided by AKIRO
 port = 1883
 topic = "python/mqtt"
 # generate client ID with pub prefix randomly
