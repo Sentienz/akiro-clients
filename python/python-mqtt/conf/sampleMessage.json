@@ -1,0 +1,71 @@
+[{
+    "lpr": "GJ01KH9626",
+    "time": "2020-10-03 17:14:14",
+    "vehtype": "Car",
+    "country": "India",
+    "regtype": "PRIVATE"
+},
+{
+    "lpr": "GJ01RM9393",
+    "time": "2020-10-03 17:14:15",
+    "vehtype": "Car",
+    "country": "India",
+    "regtype": "PRIVATE"
+},
+{
+    "lpr": "HR26AX8515",
+    "time": "2020-10-03 17:14:18",
+    "vehtype": "Car",
+    "country": "India",
+    "regtype": "PRIVATE"
+},
+{
+    "lpr": "HR26AX8515",
+    "time": "2020-10-03 17:14:18",
+    "vehtype": "Car",
+    "country": "India",
+    "regtype": "PRIVATE"
+},
+{
+    "lpr": "GJ01RX9714",
+    "time": "2020-10-03 17:14:19",
+    "vehtype": "Car",
+    "country": "India",
+    "regtype": "PRIVATE"
+},
+{
+    "lpr": "HP20C5326",
+    "time": "2020-10-03 17:14:20",
+    "vehtype": "Trucks",
+    "country": "India",
+    "regtype": "PRIVATE"
+},
+{
+    "lpr": "GJ01RM8521",
+    "time": "2020-10-03 17:14:23",
+    "vehtype": "Trucks",
+    "country": "India",
+    "regtype": "PRIVATE"
+},
+{
+    "lpr": "GJ01KF0873",
+    "time": "2020-10-03 17:14:24",
+    "vehtype": "Trucks",
+    "country": "India",
+    "regtype": "PRIVATE"
+},
+{
+    "lpr": "GJ01DX3309",
+    "time": "2020-10-03 17:14:26",
+    "vehtype": "Trucks",
+    "country": "India",
+    "regtype": "PRIVATE"
+},
+{
+    "lpr": "GJ01SX5507",
+    "time": "2020-10-03 17:14:30",
+    "vehtype": "Trucks",
+    "country": "India",
+    "regtype": "PRIVATE"
+}
+]

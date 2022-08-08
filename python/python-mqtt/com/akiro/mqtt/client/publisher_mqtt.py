@@ -1,16 +1,32 @@
 import random
+import sys
 import time
 
 from paho.mqtt import client as mqtt_client
+from configparser import ConfigParser
+from pathlib import Path
+
+#Read config.ini file
+config_object = ConfigParser()
+path_current_directory = sys.path[1]
+config_object.read(path_current_directory + "/python-mqtt/conf/config.ini")
+contents = Path(path_current_directory + "/python-mqtt/conf/sampleMessage.json").read_text()
 
 
-broker = 'saas.theakiro.com' # This is a Akiro MQTT Broker provided by AKIRO
-port = 1883
-topic = "python/mqtt"
+# MQTT Broker
+brokerConfig = config_object["MQTTConfig"]
+broker = brokerConfig["host"]
+port = int(brokerConfig["port"])
+# MQTT Topic
+topic = brokerConfig["topic"]
 # generate client ID with pub prefix randomly
 client_id = f'python-mqtt-{random.randint(0, 1000)}'
-username = 'example'
-password = None
+# MQTT Credentials
+username = brokerConfig["username"]
+password = brokerConfig["password"]
+# Client Keep Alive time period
+keepalive = int(brokerConfig["keepalive"])
+
 
 def connect_mqtt():
     def on_connect(client, userdata, flags, rc):
@@ -20,10 +36,9 @@ def connect_mqtt():
             print("Failed to connect, return code %d\n", rc)
 
     client = mqtt_client.Client(client_id)
-    # client.username_pw_set(username, password)
+    client.username_pw_set(username, password)
     client.on_connect = on_connect
-    # host, port=1883, keepalive=60, bind_address=""
-    client.connect(broker, port)
+    client.connect(broker, port, keepalive)
     return client
 
 
@@ -31,7 +46,8 @@ def publish(client):
     msg_count = 0
     while True:
         time.sleep(1)
-        msg = f"messages: {msg_count}"
+        # msg = f"messages: {msg_count}"
+        msg = contents
         result = client.publish(topic, msg, 1, False)
         # result: [0, 1]
         status = result[0]
